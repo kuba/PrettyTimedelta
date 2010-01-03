@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
+
 from prettytimedelta.core import PrettyTimedelta
 
 class PolishPrettyTimedelta(PrettyTimedelta):
-    day = ("dzień", "dni", "dni")
-    hour = ("godzina", "godziny", "godzin", )
-    minute = ("minuta", "minuty", "minut")
-    second = ("sekunda", "sekundy", "sekund")
+    day = (u"dzień", u"dni", u"dni")
+    hour = (u"godzina", u"godziny", u"godzin", )
+    minute = (u"minuta", u"minuty", u"minut")
+    second = (u"sekunda", u"sekundy", u"sekund")
 
 
     def _declination(self, name, n):
